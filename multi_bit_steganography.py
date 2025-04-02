@@ -67,3 +67,6 @@ def multi_bit_lsb_steganography_extraction(img_path, bit_depth, step_size):
 
     extracted_text = binary_to_text(binary_message)
     write_result_file(img_path, extracted_text, False)
+
+
+
