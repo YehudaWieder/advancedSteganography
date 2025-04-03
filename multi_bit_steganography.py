@@ -58,7 +58,7 @@ def multi_bit_lsb_steganography_extraction(img_path, bit_depth, step_size):
 
     binary_length = ''.join(
         bin(pixels[i // len(channels)][channels[i % len(channels)]] & mask)[2:].zfill(bit_depth)
-        for i in range(ceil(32 / bit_depth)))[:23]
+        for i in range(ceil(32 / bit_depth)))[:32]
     message_length = int(binary_length, 2)
 
     binary_message = ''.join(
